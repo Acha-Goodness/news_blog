@@ -7,7 +7,6 @@ const Home = () => {
 
 const navigate = useNavigate();
 
-//  const BaseUrl = "https://newsapi.org/v2/everything?q=tesla&from=2023-04-17&sortBy=publishedAt&apiKey=9c90bd230ae14b4294a8627d9ef672b4";
  const BaseUrl2 = "https://newsapi.org/v2/everything?q=apple&from=2023-05-17&to=2023-05-17&sortBy=popularity&apiKey=74f8b4b34e74445586bbde03d0b1c5a3";
 
  const [ newsData, setNewsData ] = useState([]);
@@ -21,7 +20,7 @@ const navigate = useNavigate();
             console.log(err.message)
             setError(err.message);
         })
- }, []); //  newsData
+ }, [newsData]);
 
  const readMore = (indx) => {
    
