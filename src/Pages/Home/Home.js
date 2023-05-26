@@ -7,20 +7,20 @@ const Home = () => {
 
 const navigate = useNavigate();
 
- const BaseUrl2 = "https://newsapi.org/v2/everything?q=apple&from=2023-05-17&to=2023-05-17&sortBy=popularity&apiKey=74f8b4b34e74445586bbde03d0b1c5a3";
+ const BaseUrl = "https://newsapi.org/v2/everything?q=apple&from=2023-05-25&to=2023-05-25&sortBy=popularity&apiKey=9c90bd230ae14b4294a8627d9ef672b4";
 
  const [ newsData, setNewsData ] = useState([]);
- const [ error, setError ] = useState("");
+//  const [ error, setError ] = useState("");
 
  useEffect(() => {
-    Axios.get(BaseUrl2)
+    Axios.get(BaseUrl)
         .then(res => {
             setNewsData(res.data.articles);
         }).catch(err => {
             console.log(err.message)
-            setError(err.message);
+            // setError(err.message);
         })
- }, [newsData]);
+ }, []);
 
  const readMore = (indx) => {
    
