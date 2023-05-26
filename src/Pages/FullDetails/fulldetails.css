@@ -44,3 +44,34 @@
     justify-content: space-between;
     align-items:center;
 }
+
+@media only screen and (min-width: 200px) and (max-width: 500px){
+    .top_bar{
+        background-color: black;
+        flex-direction: column;
+        width:100%;
+        padding-bottom: 10px;
+    }
+    .gHome{
+        padding-top: 10px;
+        color:white;
+    }
+    .top_bar h1{
+        margin-left: 0%;
+        color:white;
+    } 
+    .nws{
+        width:95%;
+        margin:10px auto;
+    }
+    .content{
+        padding-right:0%;
+        font-size: 13px;
+    }
+    .nws_author{
+        flex-direction: column;
+        justify-content:left;
+        font-size: 12px;
+        align-items:flex-start;
+    }
+}

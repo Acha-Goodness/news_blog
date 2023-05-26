@@ -11,9 +11,9 @@ const FullDetails = () => {
     <div className="new_details">
       <div className="top_bar">
         <Link to="/">
-          <p>Home</p>
+          <p className='gHome'>Home</p>
         </Link>
-        <h1>Read Complete Details</h1>
+        <h1>Read Full Details</h1>
       </div>
       <div className="nws">
         <img src={state[0].urlToImage} alt="img"/>
